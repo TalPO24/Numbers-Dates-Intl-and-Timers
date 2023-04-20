@@ -401,3 +401,39 @@ console.log(huge + ' is REALLY big!!!');
 console.log(11n / 3n);
 console.log(10 / 3);
 */
+
+/*
+//* Creating Dates
+const now = new Date()
+console.log(now)
+
+console.log(new Date('Thu Apr 20 2023 19:02:26'))
+console.log(new Date('December 24, 2015'))
+console.log(new Date(account1.movementsDates[0]))
+
+console.log(new Date(2037, 10, 19, 15, 23, 5))
+console.log(new Date(2037, 10, 31))
+
+console.log(new Date(0))
+console.log(new Date(3 * 24 * 60 * 60 * 1000))
+*/
+
+// * Working with dates 
+const future = new Date(2037, 10, 19, 15, 23)
+console.log(future)
+console.log(future.getFullYear()) // year - 2037
+console.log(future.getMonth()) // month - 10 = November
+console.log(future.getDate()) // day of the month - 19
+console.log(future.getDay()) // day of the week - 4
+console.log(future.getHours()) // hours - 15
+console.log(future.getMinutes()) // minuts- 23
+console.log(future.getSeconds()) // secondes - 00
+console.log(future.toISOString())
+console.log(future.getTime())
+
+console.log(new Date(2142249780000))
+
+console.log(Date.now()) // Time stamp
+
+future.setFullYear(2040)
+console.log(future)
